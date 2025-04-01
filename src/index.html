@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cryptocurrency List</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>Cryptocurrency List</h1>
-            <button id="toggle-button">Toggle Dark/Light Mode</button>
-        </header>
+      <header>
+        <h1>Crypto Projects</h1>
+        <button id="toggle-button">
+          <i class="fas fa-sun"></i>
+        </button>
+      </header>
+      <div class="table-container">
         <table>
-            <thead>
-                <tr>
-                    <th>Project</th>
-                    <th>About</th>
-                    <th>Chain</th>
-                    <th>Cost</th>
-                    <th>Backers</th>
-                    <th>Stage</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Project A</td>
-                    <td>A brief description of Project A.</td>
-                    <td>Ethereum</td>
-                    <td>$100</td>
-                    <td>150</td>
-                    <td>Active</td>
-                </tr>
-                <tr>
-                    <td>Project B</td>
-                    <td>A brief description of Project B.</td>
-                    <td>Binance Smart Chain</td>
-                    <td>$200</td>
-                    <td>200</td>
-                    <td>Upcoming</td>
-                </tr>
-                <tr>
-                    <td>Project C</td>
-                    <td>A brief description of Project C.</td>
-                    <td>Polygon</td>
-                    <td>$150</td>
-                    <td>100</td>
-                    <td>Completed</td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>About</th>
+              <th>Chain</th>
+              <th>Cost</th>
+              <th>Backers</th>
+              <th>Stage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Project A</td>
+              <td>A brief description of Project A.</td>
+              <td>Ethereum</td>
+              <td>$100</td>
+              <td>150</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Project B</td>
+              <td>A brief description of Project B.</td>
+              <td>Binance Smart Chain</td>
+              <td>$200</td>
+              <td>200</td>
+              <td>Upcoming</td>
+            </tr>
+            <tr>
+              <td>Project C</td>
+              <td>A brief description of Project C.</td>
+              <td>Polygon</td>
+              <td>$150</td>
+              <td>100</td>
+              <td>Completed</td>
+            </tr>
+          </tbody>
         </table>
+      </div>
     </div>
     <script src="scripts/script.js"></script>
-</body>
+  </body>
 </html>

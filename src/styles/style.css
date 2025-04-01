@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #f9f9f9;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -22,14 +22,14 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  padding: 20px;
-  background-color: #007bff;
-  color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
+  color: #333;
 }
 
 h1 {
@@ -70,10 +70,39 @@ h1 {
   padding: 20px;
 }
 
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #555;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+table tr:last-child td {
+  border-bottom: none;
 }
 
 th,
@@ -109,6 +138,14 @@ table tr:nth-child(even) {
 
 .dark-mode table th {
   background-color: #333;
+  color: #f4f4f9;
+}
+
+.dark-mode table tr:hover {
+  background-color: #2a2a3b;
+}
+
+.dark-mode #toggle-button {
   color: #f4f4f9;
 }
 
